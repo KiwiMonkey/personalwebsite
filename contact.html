@@ -1,0 +1,101 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"/>
+    <title>Abdullah Aftab's Homepage</title>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+      $(document).ready(function(){
+
+        $('.fadeIn').fadeIn(500);
+        
+        $('.Hom').click(function(event){
+          var colorType = this.getAttribute("data-color");
+          event.preventDefault();
+          var href = this.href;
+          $("#panel").css("background",colorType);
+          $("#panel").animate({height:"100%", width:"100%"},500,
+          function(){
+            window.location = href;
+          });
+          
+
+
+      });
+      });
+      
+    </script>
+</head>
+
+
+<body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"
+        ></script>
+        <div id = "panel"></div>
+        <nav class="showMobile navbar navbar-expand-lg navbar-light" style = "background:rgb(121, 121, 121) !important;">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navToggler" aria-controls="navToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html" style = "color: blue; font-size: 18px;">
+            <b>ABDULLAH</b> <b style = "color: rgb(245, 192, 94); -webkit-text-stroke: 0.5px black;">AFTAB</b></a>
+        
+          <div class="collapse navbar-collapse" id="navToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">  
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item active">  
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item active">  
+                <a class="nav-link" href="./projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+      <div class = "contentBox" style = "overflow-x: hidden;">
+          <div class = "fadeIn container-fluid p-5">
+            <div class = "text-center">
+              <h1>Contact Me!</h1>
+            </div>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc53M93Ghnvfj3WjtYT3gFT1qzQQmTV-o174R_ocyFqxlDemg/viewform?embedded=true" width="640" height="1129" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <div class = "showNonMobile">
+            <img class = "fadeInImage showNonMobile" src="telephone.png" style = "position: absolute; right:25%; top:30%; z-index: -10000;top:4.5%; width: 233; filter: opacity(80%);">
+          </div>
+            
+          </div>
+        </div>
+      <div class = "showNonMobile links">
+        <button type="button" class="fadeIn btnHOME btn btn-link"><a href = "index.html" class = "Hom" data-color = "#eae9e4">HOME</a></button>
+        <button type="button" class="fadeIn btnABOUT btn btn-link"><a href = "./about.html" class = "Hom" data-color = "#e7acaa">ABOUT</a></button>
+        <button type="button" class="fadeIn btnPROJECTS btn btn-link"><a href = "./projects.html" class = "Hom" data-color = "#d3e0ce">PROJECTS</a></button>
+        <button type="button" class="fadeIn btnCONTACT btn btn-link"><a href = "./resume.html" class = "Hom" data-color = "#e2b995">RESUME</a></button>
+        <button type="button" class="fadeIn btnRESUME btn btn-link"><a href = "./contact.html" class = "Hom" data-color = "#9cb8a0">CONTACT</a></button>
+    </div>
+    <div class = "fadeIn" style = "text-align: center;">
+      <h1 class = "name">ABDULLAH AFTAB</h1>
+      </div>
+</body>
+
+
+
+</html>

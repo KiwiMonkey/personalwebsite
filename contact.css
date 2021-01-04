@@ -1,0 +1,131 @@
+body{
+    background: #9cb8a0;
+}
+
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+.fadeIn{
+    display:none;
+}
+@media only screen and (min-width: 670px) {
+    .showMobile{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 670px) and (min-width: 401px){
+    .showNonMobile{
+        display:none;
+    }
+    .name{
+        display: none;
+    }
+    .textDiv{
+    border-radius: 30px 20px 100px 20px !important;
+    width: 350px !important;
+    height: 440px !important;
+    }
+    .p-5{
+        padding: 0 auto;
+    }
+    iframe{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 350px){
+    .showNonMobile{
+        display:none;
+    }
+    .name{
+        display: none;
+    }
+    .textDiv{
+    border-radius: 30px 20px 100px 20px !important;
+    width: 350px !important;
+    height: 440px !important;
+    }
+    .p-5{
+        padding: 0!important;
+    }
+}
+@media only screen and (max-width: 350px){
+    .showNonMobile{
+        display:none;
+    }
+    .name{
+        display: none;
+    }
+    .textDiv{
+    border-radius: 30px 20px 100px 20px !important;
+    width: 250px !important;
+    height: 440px !important;
+    }
+    .p-5{
+        padding: 0!important;
+    }
+}
+
+.navbar{
+    background-color: #6097BE;
+}
+.name{
+    text-decoration: none;
+    color:rgb(121, 121, 121);
+    outline: none !important;
+    box-shadow: none;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.textDiv{
+    background: #ceac9c;
+    border-radius: 150px 10px 150px 10px;
+    border: 3px solid  #e6bfad;
+    padding: 5%;
+    text-align: center;
+    width: 450px;
+    height: 440px;
+}
+
+h1{
+    text-shadow: 3px .5px #666464;
+}
+
+.nav-link{
+    color: white !important;
+}
+#panel{
+    height:0%; width:0%; position:absolute; top:0; right:0; z-index: 1000;
+}
+
+.columnHover{
+    transition: .5s;
+    opacity: 0;
+}
+
+.columnHover:hover{
+    opacity: 1;
+    transition: 0.5s;
+    
+}
+
+.btn, .btn:focus, .btn:hover, .btn:active {
+    padding: 2rem;
+    text-decoration: none;
+    color:rgb(121, 121, 121);
+    outline: none !important;
+    box-shadow: none;
+    font-size: 2rem;
+}
+
+.links{
+    text-align: center;
+}
+
+.contentBox{
+    height: 75vh; width:100%;
+}

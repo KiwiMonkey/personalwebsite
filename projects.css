@@ -1,0 +1,112 @@
+body{
+    background: #d3e0ce;
+}
+#projectDiv{
+    border: 1px solid black;
+    height: 225px;
+    width: 400px;
+}
+.projectImage{
+    height: 225px;
+    width: 400px;
+    display: inline-flex;
+}
+.projectText{
+    width: auto;
+    height: 175px;
+}
+#projectContainer{
+    display: inline-flex;
+    overflow: hidden;
+    width: 620px;
+    height:400px;
+    outline: none;
+}
+
+*:focus{
+    outline: 0 !important;
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+    cursor: pointer;
+}
+.fadeIn{
+    display:none;
+}
+@media only screen and (min-width: 670px) {
+    .showMobile{
+        display:none;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .showNonMobile{
+        display:none;
+    }
+    .projectContainer{
+        padding: 0 !important;
+    }
+}
+
+.navbar{
+    background-color: #6097BE;
+}
+.projButton{
+    height: 100px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.name{
+    text-decoration: none;
+    color:rgb(121, 121, 121);
+    outline: none !important;
+    box-shadow: none;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.buttonImage{
+width: 100px;
+outline: none;
+}
+
+h1{
+    text-shadow: 3px .5px #666464;
+}
+
+.nav-link{
+    color: white !important;
+}
+#panel{
+    height:0%; width:0%; position:absolute; bottom:0; right:0; z-index: 1000;
+}
+
+.columnHover{
+    transition: .5s;
+    opacity: 0;
+}
+
+.columnHover:hover{
+    opacity: 1;
+    transition: 0.5s;
+    
+}
+
+.btn, .btn:focus, .btn:hover, .btn:active {
+    padding: 2rem;
+    text-decoration: none;
+    color:rgb(121, 121, 121);
+    outline: none !important;
+    box-shadow: none;
+    font-size: 2rem;
+}
+
+.links{
+    text-align: center;
+}
+.contentBox{
+    height: 75vh; width:100%;
+}
